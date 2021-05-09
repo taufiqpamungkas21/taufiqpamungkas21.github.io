@@ -186,7 +186,7 @@
 	  	}
 	  	.mybuttonyes, .mybuttonno{
 	  		display: inline-block;
-			padding: 5px 10px;
+			padding: 10px 10px;
 	  		min-width: 80px;
 	  		background: cyan;
 	  		height: 30px;
@@ -592,7 +592,7 @@
 				}
 			}
 			function move2(){
-				kali=50;
+				kali=30;
 				addanimation();
 				random1=(mywindow.offsetTop+(Math.floor(Math.random() * 10)-2)*kali);
 				random2=(mywindow.offsetLeft+(Math.floor(Math.random() * 10)-2)*kali);
@@ -622,12 +622,12 @@
 			var vid = document.getElementById("myVideo"); 
 			function playVid() { 
 				stopOpening();
-				// $('#myVideo').show();
-				// $('.vidcont').fadeIn();
-				// localStorage.setItem("checked", "yoi");
-				// $('#mywindow').fadeOut(300);
-			  	// vid.play(); 
-				myclock();
+				$('#myVideo').show();
+				$('.vidcont').fadeIn();
+				localStorage.setItem("checked", "yoi");
+				$('#mywindow').fadeOut(300);
+			  	vid.play(); 
+				
 			} 
 
 			vid.onended = function() {
