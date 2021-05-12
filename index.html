@@ -443,7 +443,7 @@
 					<div style="width: 100%;text-align: center; margin-top: 20px;margin-bottom: 20px;">
 						<div style="width: 260px;background-color: white;margin: auto; padding: 5px;border-radius: 10px;">
 							<h1>THRnya Kak 😍</h1>
-							<img style="width: 100%;" src="qrcode.png">
+							<img onclick="goShopee()" style="width: 100%;" src="qrcode.png">
 						</div>
 					</div>
 				</div>
@@ -497,6 +497,10 @@
 	  			startTime();
 	  			stopOpening();
 	  		}
+
+			function goShopee(){
+				window.open("https://wallet.airpay.co.id/qr/00a4414b4838949bdc86");
+			}
 			
 	  		$('img').on('dragstart', function(event) { event.preventDefault(); });
 	  		dragElement(document.getElementById("mywindow"));
@@ -622,12 +626,12 @@
 			var vid = document.getElementById("myVideo"); 
 			function playVid() { 
 				stopOpening();
-				$('#myVideo').show();
-				$('.vidcont').fadeIn();
-				localStorage.setItem("checked", "yoi");
-				$('#mywindow').fadeOut(300);
-			  	vid.play(); 
-				
+				// $('#myVideo').show();
+				// $('.vidcont').fadeIn();
+				// localStorage.setItem("checked", "yoi");
+				// $('#mywindow').fadeOut(300);
+			  	// vid.play(); 
+				  myclock();
 			} 
 
 			vid.onended = function() {
