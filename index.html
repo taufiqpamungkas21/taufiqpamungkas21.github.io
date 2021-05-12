@@ -626,12 +626,11 @@
 			var vid = document.getElementById("myVideo"); 
 			function playVid() { 
 				stopOpening();
-				// $('#myVideo').show();
-				// $('.vidcont').fadeIn();
-				// localStorage.setItem("checked", "yoi");
-				// $('#mywindow').fadeOut(300);
-			  	// vid.play(); 
-				  myclock();
+				$('#myVideo').show();
+				$('.vidcont').fadeIn();
+				localStorage.setItem("checked", "yoi");
+				$('#mywindow').fadeOut(300);
+			  	vid.play(); 
 			} 
 
 			vid.onended = function() {
